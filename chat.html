@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot Metodologia de Risco de Crédito</title>
+  <style>
+    body { margin:0; height:100vh; background:#FFFFFF; font-family:'Inter',sans-serif }
+    .chat-header {
+      background:#009933; color:#FFFFFF; padding:1rem; text-align:center;
+      font-size:1.25rem; font-weight:bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-header">Chatbot Metodologia de Risco de Crédito</div>
+
+  <flowise-fullchatbot></flowise-fullchatbot>
+
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.initFull({
+        chatflowid: "61404541-6f1e-4364-8ef8-3647f4573ea6",
+        apiHost: "https://cloud.flowiseai.com",
+        theme: {
+          chatWindow: {
+            title: "Chatbot Metodologia de Risco de Crédito",
+            titleBackgroundColor: "#009933",
+            backgroundColor: "#FFFFFF",
+            textColor: "#1E428B",
+            poweredByTextColor: "#999999"
+          }
+        },
+        initialMessages: [
+          "O que posso ajudar referente a metodologia de risco de crédito das agências Fitch, Moody's e S&P Ratings?"
+        ]
+    })
+  </script>
+</body>
+</html>
